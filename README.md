@@ -21,9 +21,7 @@
 ### **Özellikler:**
 
 -   Kullanıcı kolay bir şekilde menüdeki ürünleri inceleyip karşılaştırabilecek.
--   Uygulamada dil desteği mevcut
--   Uygulamada gece ve gündüz modu olacak.
--   
+  
 ----------
 
 ### **Kullanılan Teknolojiler:**
@@ -152,9 +150,3 @@ lib/
 
 ----------
 
-
-https://github.com/aliriza1926/Bakery_Menu/blob/main/ing.png?raw=true
-
-https://github.com/aliriza1926/Bakery_Menu/blob/main/dark.png?raw=true
-
-https://github.com/aliriza1926/Bakery_Menu/blob/main/menu.png?raw=true
