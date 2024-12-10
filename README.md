@@ -139,12 +139,6 @@ flutter_app/
 
 ----------
 
-### **Lisans:**
-
-[Lisans türü] kapsamında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasını inceleyebilirsiniz.
-
-----------
-
 ### **İletişim:**
 
 -   **Proje Bağlantısı:** [https://github.com/aliriza1926/Bakery_Menu](https://github.com/aliriza1926/Bakery_Menu)
@@ -155,7 +149,7 @@ flutter_app/
 ### **Teşekkürler:**
 
 İstinye Üniversitesi'ne destekleri için teşekkür ederiz.  
-[Diğer teşekkürler]
+Danışman hocamız Keyvan Arastehe'ye teşekkürler.
 
 ----------
 
