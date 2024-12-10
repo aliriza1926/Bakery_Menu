@@ -78,12 +78,21 @@
 ### **Proje Yapısı:**
 
 ```
-lib/
-├── modeller/       # Veri modelleri (ürünler, kategoriler)
-├── ekranlar/       # Uygulama ekranları (menü, giriş, favoriler)
-├── widgets/        # Tekrar kullanılabilir arayüz öğeleri
-├── servisler/      # API servisleri (veri alma, kullanıcı doğrulama)
-└── yardımcılar/    # Yardımcı fonksiyonlar
+flutter_app/
+├── lib/
+│   ├── core/
+│   │   ├── models.dart           # Ürün veri modeli ve diğer modeller
+│   │   └── api.dart              # API işlemleri
+│   ├── screens/
+│   │   └── home_screen.dart      # Ana ekran
+│   ├── widgets/
+│   │   └── logo.dart             # Logo widget'ı
+│   ├── main.dart                 # Uygulamanın başlatıldığı ana dosya
+├── assets/
+│   └── images/                   # Resimler burada yer alacak
+├── pubspec.yaml                  # Flutter proje yapılandırma dosyası
+└── test/
+    └── widget_test.dart          # Widget test dosyası (isteğe bağlı)
 
 ```
 
@@ -91,7 +100,7 @@ lib/
 
 ### **Ekran Görüntüleri:**
 
-[Uygulama ekran görüntüleri buraya eklenecek.]
+[![Uygulama ekran görüntüleri buraya eklenecek.](https://github.com/aliriza1926/Bakery_Menu/blob/main/proje.png?raw=true)]
 
 ----------
 
