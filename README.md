@@ -28,7 +28,7 @@
 
 -   **Flutter**
 -   **Dart**
--   **[Diğer teknolojiler]**
+
 
 ----------
 
@@ -36,9 +36,8 @@
 
 #### **Gereksinimler:**
 
--   Flutter SDK (sürüm X.X.X)
--   Dart SDK (sürüm X.X.X)
--   [Diğer gerekli yazılımlar]
+-   Flutter SDK 
+-   Dart SDK 
 
 ----------
 
@@ -148,8 +147,8 @@ flutter_app/
 
 ### **Teşekkürler:**
 
-İstinye Üniversitesi'ne destekleri için teşekkür ederiz.  
-Danışman hocamız Keyvan Arastehe'ye teşekkürler.
+İstinye Üniversitesi'ne destekleri için teşekkür ederim.  
+Danışman hocamız Keyvan Arasteh'e yardım ve destekleri için teşekkür ederim.
 
 ----------
 
