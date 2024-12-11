@@ -78,20 +78,17 @@
 
 ```
 flutter_app/
-├── lib/
-│   ├── core/
-│   │   ├── models.dart           # Ürün veri modeli ve diğer modeller
-│   │   └── api.dart              # API işlemleri
-│   ├── screens/
-│   │   └── home_screen.dart      # Ana ekran
-│   ├── widgets/
-│   │   └── logo.dart             # Logo widget'ı
-│   ├── main.dart                 # Uygulamanın başlatıldığı ana dosya
-├── assets/
-│   └── images/                   # Resimler burada yer alacak
-├── pubspec.yaml                  # Flutter proje yapılandırma dosyası
-└── test/
-    └── widget_test.dart          # Widget test dosyası (isteğe bağlı)
+lib/
+├── core/
+│   └── themes.dart
+├── screens/
+│   └── home_screen.dart
+└── main.dart
+assets/
+├── images/
+├── icons/
+pubspec.yaml
+
 
 ```
 
