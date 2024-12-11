@@ -21,7 +21,7 @@
 ### **Özellikler:**
 
 -   Kullanıcı kolay bir şekilde menüdeki ürünleri inceleyip karşılaştırabilecek.
-  
+-   Gece ve Gündüz modu mevcuttur  
 ----------
 
 ### **Kullanılan Teknolojiler:**

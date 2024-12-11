@@ -1,20 +1,29 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart'; // HomeScreen'ı burada import ediyoruz
+import 'core/themes.dart';
+import 'screens/home_screen.dart';
 
-void main() {
-  runApp(MyApp());
+void main() => runApp(MyApp());
+
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
 }
 
-class MyApp extends StatelessWidget {
+class _MyAppState extends State<MyApp> {
+  bool _isDarkMode = false;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Fırın Uygulaması',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
+      theme: AppThemes.light, // lightTheme yerine light
+      darkTheme: AppThemes.dark, // darkTheme yerine dark
+      themeMode: _isDarkMode ? ThemeMode.dark : ThemeMode.light,
+      home: HomeScreen(
+        isDarkMode: _isDarkMode,
+        onThemeToggle: () => setState(() => _isDarkMode = !_isDarkMode),
       ),
-      home: HomeScreen(), // Burada HomeScreen'ı gösteriyoruz
     );
   }
 }

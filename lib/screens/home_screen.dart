@@ -1,100 +1,119 @@
 import 'package:flutter/material.dart';
+import '../core/themes.dart';
 
 class HomeScreen extends StatelessWidget {
+  final bool isDarkMode;
+  final VoidCallback onThemeToggle;
+
+  HomeScreen({required this.isDarkMode, required this.onThemeToggle});
+
+  final items = {
+    'Yiyecekler': [
+      {'name': 'Açma', 'image': 'acma.jpg', 'price': 15.0},
+      {'name': 'Poğaça', 'image': 'pogaca.jpg', 'price': 18.0},
+      {'name': 'Simit', 'image': 'simit.jpg', 'price': 12.0},
+      {'name': 'Pide', 'image': 'kirpidesi.jpg', 'price': 25.0},
+      {'name': 'Su Böreği', 'image': 'suboregi.jpg', 'price': 60.0},
+    ],
+    'İçecekler': [
+      {'name': 'Su', 'image': 'su.jpg', 'price': 5.0},
+      {'name': 'Çay', 'image': 'cay.jpg', 'price': 10.0},
+      {'name': 'Kahve', 'image': 'kahve.jpg', 'price': 20.0},
+      {'name': 'Meyve Suyu', 'image': 'meyvesuyu.jpg', 'price': 15.0},
+      {'name': 'Kola', 'image': 'kola.jpg', 'price': 18.0},
+    ],
+  };
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Yiyecek & içecek Menüsü'),
+        title: Text('Fırın Menüsü'),
         actions: [
           IconButton(
-            icon: Icon(Icons.brightness_6),
-            onPressed: () {
-              // Karanlık / açık tema geçişi için işlevsellik eklenebilir
-            },
+            icon: Image.asset(
+              'assets/icons/moon.png', // Ay simgesi görseli
+              width: 24,
+              height: 24,
+            ),
+            onPressed: onThemeToggle, // Temayı değiştiren fonksiyon
           ),
         ],
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: [
-            // Fırın Ürünleri Bölümü
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Text(
-                'Yiyecekler',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.brown,
-                ),
-              ),
-            ),
-            // Fırın Ürünleri Listesi
-            Column(
-              children: [
-                _buildMenuItem('Açma', 'assets/images/acma.jpg', 20.0),
-                _buildMenuItem('Poğaça', 'assets/images/pogaca.jpg', 25.0),
-                _buildMenuItem('Simit', 'assets/images/simit.jpg', 15.0),
-                _buildMenuItem(
-                    'Kır Pidesi', 'assets/images/kirpidesi.jpg', 35.0),
-              ],
-            ),
-            SizedBox(height: 30),
-
-            // İçecekler Bölümü
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Text(
-                'İçecekler',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.teal,
-                ),
-              ),
-            ),
-            // İçecekler Listesi
-            Column(
-              children: [
-                _buildMenuItem('Su', 'assets/images/su.jpg', 5.0),
-                _buildMenuItem('Çay', 'assets/images/cay.jpg', 10.0),
-                _buildMenuItem(
-                    'Meyve Suyu', 'assets/images/meyvesuyu.jpg', 12.0),
-                _buildMenuItem('Kahve', 'assets/images/kahve.jpg', 18.0),
-              ],
-            ),
-          ],
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: items.entries
+              .map((entry) => Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildTitle(entry.key),
+                      ...entry.value
+                          .map((item) => _buildMenuItem(item))
+                          .toList(),
+                    ],
+                  ))
+              .toList(),
         ),
       ),
     );
   }
 
-  // Menü öğesi oluşturma fonksiyonu
-  Widget _buildMenuItem(String name, String imagePath, double price) {
-    return Card(
-      margin: EdgeInsets.all(8),
-      child: Row(
-        children: [
-          Image.asset(
-            imagePath,
-            width: 100,
-            height: 100,
-            fit: BoxFit.cover,
-          ),
-          SizedBox(width: 16),
-          Expanded(
-            child: Text(
-              name,
-              style: TextStyle(fontSize: 18),
+  Widget _buildTitle(String title) => Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Text(
+          title,
+          style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: AppThemes.accent(isDarkMode)),
+        ),
+      );
+
+  Widget _buildMenuItem(Map<String, dynamic> item) => Card(
+        margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        elevation: 4,
+        child: Row(
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.horizontal(left: Radius.circular(12)),
+              child: Image.asset(
+                'assets/images/${item['image']}',
+                width: 100,
+                height: 100,
+                fit: BoxFit.cover,
+                errorBuilder: (_, __, ___) => Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.grey[300],
+                  child: Icon(Icons.broken_image, size: 40),
+                ),
+              ),
             ),
-          ),
-          Text(
-            '\TL${price.toStringAsFixed(2)}',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-          ),
-        ],
-      ),
-    );
-  }
+            SizedBox(width: 16),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    item['name'],
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: AppThemes.text(isDarkMode)),
+                  ),
+                  SizedBox(height: 4),
+                  Text(
+                    '${item['price']} TL',
+                    style: TextStyle(
+                        color: AppThemes.accent(isDarkMode),
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      );
 }
