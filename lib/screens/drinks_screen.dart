@@ -42,29 +42,28 @@ class DrinkScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
             child: Column(
               children: [
-                _buildDrinkItem(
-                    context, "assets/images/su1.jpg", "Su", "10 TL"),
+                _buildDrinkItem(context, "assets/images/su1.jpg", "Su", "10 ₺"),
                 const SizedBox(height: 10),
                 _buildDrinkItem(
-                    context, "assets/images/cay2.jpg", "Çay", "15 TL"),
+                    context, "assets/images/cay2.jpg", "Çay", "15 ₺"),
                 const SizedBox(height: 10),
                 _buildDrinkItem(
-                    context, "assets/images/kahve.jpg", "Kahve", "20 TL"),
+                    context, "assets/images/kahve.jpg", "Kahve", "20 ₺"),
                 const SizedBox(height: 10),
                 _buildDrinkItem(
-                    context, "assets/images/meyvesuyu1.jpg", "Cappy", "15 TL"),
+                    context, "assets/images/meyvesuyu1.jpg", "Cappy", "15 ₺"),
                 const SizedBox(height: 10),
                 _buildDrinkItem(
-                    context, "assets/images/kola.jpg", "Kola", "18 TL"),
+                    context, "assets/images/kola.jpg", "Kola", "18 ₺"),
                 const SizedBox(height: 10),
                 _buildDrinkItem(
-                    context, "assets/images/fanta.jpg", "Fanta", "18 TL"),
+                    context, "assets/images/fanta.jpg", "Fanta", "18 ₺"),
                 const SizedBox(height: 10),
                 _buildDrinkItem(
-                    context, "assets/images/sprite.jpg", "Sprite", "18 TL"),
+                    context, "assets/images/sprite.jpg", "Sprite", "18 ₺"),
                 const SizedBox(height: 10),
                 _buildDrinkItem(
-                    context, "assets/images/soda.jpg", "Soda", "10 TL"),
+                    context, "assets/images/soda.jpg", "Soda", "10 ₺"),
                 const SizedBox(height: 10),
               ],
             ),
