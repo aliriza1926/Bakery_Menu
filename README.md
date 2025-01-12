@@ -1,16 +1,121 @@
-# yeni_flutter
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+# **Bakery_Menu**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![İstinye Üniversitesi](https://www.unitededucation.com/linklogoch/istinye-university-logo.png)
+
+
+### **Danışman:**
+
+[[https://github.com/keyvanarasteh](https://github.com/keyvanarasteh)] (Keyvan Arasteh)
+
+### **Takım Üyesi:**
+
+-   Ali Rıza Zengin [GitHub](https://github.com/aliriza1926)
+
+----------
+
+### **Özellikler:**
+
+-   Kullanıcı kolay bir şekilde menüdeki ürünleri inceleyip karşılaştırabilecek.
+
+----------
+
+### **Kullanılan Teknolojiler:**
+
+-   **Flutter**
+-   **Dart**
+
+
+----------
+
+### **Başlangıç:**
+
+#### **Gereksinimler:**
+
+-   Flutter SDK 
+-   Dart SDK 
+
+----------
+
+### **Kurulum Adımları:**
+
+1.  Projeyi bilgisayarınıza indirin:
+    
+    ```bash
+    git clone https://github.com/aliriza1926/Bakery_Menu  
+    
+    ```
+    
+2.  Proje klasörüne gidin:
+    
+    ```bash
+    cd Bakery_Menu  
+    
+    ```
+    
+3.  Gerekli paketleri yükleyin:
+    
+    ```bash
+    flutter pub get  
+    
+    ```
+    
+4.  Uygulamayı başlatın:
+    
+    ```bash
+    flutter run  
+    
+    ```
+    
+
+----------
+
+### **Proje Yapısı:**
+
+```
+lib/
+├── app/
+│   ├── routers.dart
+│   └── themes.dart
+├── screens/
+│   ├── drinks_screen.dart
+│   ├── foods_screen.dart
+│   ├── home_screen.dart 
+│   └── loading_screen.dart
+├── views/
+│   └── app_view.dart
+└── main.dart
+
+
+```
+
+----------
+
+### **Ekran Görüntüleri:**
+
+[![Uygulama ekran görüntüleri buraya eklenecek.](https://github.com/aliriza1926/Bakery_Menu/blob/main/proje.png?raw=true)]
+
+----------
+
+
+
+----------
+
+### **İletişim:**
+
+-   **Proje Bağlantısı:** [https://github.com/aliriza1926/Bakery_Menu](https://github.com/aliriza1926/Bakery_Menu)
+-   **İstinye Üniversitesi:** [https://www.istinye.edu.tr/](https://www.istinye.edu.tr/)
+
+----------
+
+### **Teşekkürler:**
+
+İstinye Üniversitesi'ne destekleri için teşekkür ederim.  
+Danışman hocamız Keyvan Arasteh'e yardım ve destekleri için teşekkür ederim.
+
+----------
+
