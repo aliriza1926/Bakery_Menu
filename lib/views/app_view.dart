@@ -73,6 +73,24 @@ class BottomMenu extends StatelessWidget {
               ),
             ],
           ),
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              IconButton(
+                onPressed: () => context.go("/sweet"),
+                icon: Icon(
+                  Icons.cake_outlined,
+                  color: Theme.of(context).colorScheme.onSecondary,
+                ),
+              ),
+              Text(
+                "tatlılar",
+                style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                    color: Theme.of(context).colorScheme.onSecondary,
+                    fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
         ],
       ),
     );

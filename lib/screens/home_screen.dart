@@ -66,14 +66,14 @@ class HomeScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     child: Image.asset(
                       'assets/images/firinürünleri.jpg',
-                      width: 400,
-                      height: 230,
+                      width: 300,
+                      height: 130,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               Align(
                 alignment: Alignment.center,
                 child: Text(
@@ -91,8 +91,33 @@ class HomeScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     child: Image.asset(
                       'assets/images/icecekleranaekran.jpg',
-                      width: 400,
-                      height: 230,
+                      width: 300,
+                      height: 130,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 10),
+              Align(
+                alignment: Alignment.center,
+                child: Text(
+                  "Tatlılar",
+                  style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                        color: Theme.of(context).colorScheme.onSurface,
+                      ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () => context.push("/sweet"),
+                child: Padding(
+                  padding: const EdgeInsets.all(12),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                    child: Image.asset(
+                      'assets/images/tatligenel.jpeg',
+                      width: 300,
+                      height: 130,
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -104,9 +129,9 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 70,
+        height: 70, // Alt kısmın yüksekliği
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.secondary,
+          color: Theme.of(context).colorScheme.secondary, // Arka plan rengi
           borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(40),
             topRight: Radius.circular(40),

@@ -2,6 +2,7 @@ import 'package:flutter_app/screens/drinks_screen.dart';
 import 'package:flutter_app/screens/foods_screen.dart';
 import 'package:flutter_app/screens/home_screen.dart';
 import 'package:flutter_app/screens/loading_screen.dart';
+import 'package:flutter_app/screens/sweet_screen.dart';
 import 'package:go_router/go_router.dart';
 
 final router = GoRouter(
@@ -33,6 +34,13 @@ final router = GoRouter(
       pageBuilder: (context, state) => NoTransitionPage<void>(
         key: state.pageKey,
         child: const DrinkScreen(),
+      ),
+    ),
+    GoRoute(
+      path: '/sweet',
+      pageBuilder: (context, state) => NoTransitionPage<void>(
+        key: state.pageKey,
+        child: const SweetScreen(),
       ),
     ),
   ],
