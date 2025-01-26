@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/app/themes.dart';
 import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,6 +12,21 @@ class HomeScreen extends StatelessWidget {
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(75),
         child: AppBar(
+          actions: [
+            IconButton(
+              icon: Icon(
+                Provider.of<ThemeProvider>(context).isDarkMode
+                    ? Icons.light_mode
+                    : Icons.dark_mode,
+                color: Theme.of(context).colorScheme.onSecondary,
+                size: 34,
+              ),
+              onPressed: () {
+                Provider.of<ThemeProvider>(context, listen: false)
+                    .toggleTheme();
+              },
+            ),
+          ],
           scrolledUnderElevation: 0,
           toolbarHeight: 75,
           shape: const RoundedRectangleBorder(

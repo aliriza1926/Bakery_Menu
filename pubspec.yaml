@@ -13,7 +13,7 @@ dependencies:
   cupertino_icons: ^1.0.8
 
   
-  provider: ^6.1.2
+  provider: ^6.1.1
   flutter_localizations:
     sdk: flutter
   shared_preferences: ^2.3.3
@@ -35,6 +35,3 @@ flutter:
   assets:
     - assets/images/
     - assets/loading/
-
-
-   
