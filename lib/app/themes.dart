@@ -41,14 +41,14 @@ class AppTheme {
     ),
   );
   static ThemeData darktheme = ThemeData(
-    colorScheme: ColorScheme.dark(
-      primary: Colors.teal.shade400,
+    colorScheme: const ColorScheme.dark(
+      primary: Color(0xFF8B4513),
       onPrimary: Colors.white,
-      secondary: Colors.orangeAccent,
+      secondary: Color(0xFFDEB887),
       onSecondary: Colors.black,
-      tertiary: const Color.fromARGB(179, 158, 69, 49),
-      onTertiary: Colors.black,
-      surface: Colors.grey.shade900,
+      tertiary: Color(0xFFD2691E),
+      onTertiary: Colors.white,
+      surface: Color(0xFF2D2D2D),
       onSurface: Colors.white,
     ),
     textTheme: TextTheme(

@@ -104,9 +104,9 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 70, // Alt kısmın yüksekliği
+        height: 70,
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.secondary, // Arka plan rengi
+          color: Theme.of(context).colorScheme.secondary,
           borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(40),
             topRight: Radius.circular(40),

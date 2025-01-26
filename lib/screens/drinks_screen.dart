@@ -36,9 +36,7 @@ class DrinkScreen extends StatelessWidget {
             ),
           ),
           title: Padding(
-            padding: const EdgeInsets.only(
-                top:
-                    7), // içecekler yazısını aşşağıya kaydırmak için kullanıyoruz
+            padding: const EdgeInsets.only(top: 7),
             child: Text(
               "İçecekler",
               style: Theme.of(context).textTheme.displayLarge?.copyWith(
@@ -110,7 +108,7 @@ class DrinkScreen extends StatelessWidget {
                   Image.asset(image, fit: BoxFit.cover, width: 90, height: 90),
             ),
           ),
-          const SizedBox(width: 20), // Fotoğraf ile yazı arasındaki boşluk
+          const SizedBox(width: 20),
           Expanded(
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -124,11 +122,11 @@ class DrinkScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  width: 2, // Çizginin genişliği
-                  height: 70, // Çizginin yüksekliği
+                  width: 2,
+                  height: 70,
                   color: Theme.of(context).colorScheme.onPrimary,
                 ),
-                const SizedBox(width: 10), // Çizgi ve fiyat arasındaki boşluk
+                const SizedBox(width: 10),
                 Padding(
                   padding: const EdgeInsets.only(right: 20),
                   child: Text(
