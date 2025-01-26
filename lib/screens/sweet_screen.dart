@@ -28,7 +28,7 @@ class SweetScreen extends StatelessWidget {
             ),
           ],
           scrolledUnderElevation: 0,
-          toolbarHeight: 75, // Yüksekliği artırdık
+          toolbarHeight: 75,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(40),
@@ -36,8 +36,7 @@ class SweetScreen extends StatelessWidget {
             ),
           ),
           title: Padding(
-            padding:
-                const EdgeInsets.only(bottom: 8), // Yazıyı aşağıya kaydırdık
+            padding: const EdgeInsets.only(bottom: 8),
             child: Text(
               "Tatlılar",
               style: Theme.of(context).textTheme.displayLarge?.copyWith(
@@ -110,7 +109,7 @@ class SweetScreen extends StatelessWidget {
                   fit: BoxFit.cover, width: 90, height: 90),
             ),
           ),
-          const SizedBox(width: 20), // Fotoğraf ile yazı arasındaki boşluk
+          const SizedBox(width: 20),
           Expanded(
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -124,11 +123,11 @@ class SweetScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  width: 2, // Çizginin genişliği
-                  height: 70, // Çizginin yüksekliği
+                  width: 2,
+                  height: 70,
                   color: Theme.of(context).colorScheme.onPrimary,
                 ),
-                const SizedBox(width: 10), // Çizgi ve fiyat arasındaki boşluk
+                const SizedBox(width: 10),
                 Padding(
                   padding: const EdgeInsets.only(right: 40),
                   child: Text(

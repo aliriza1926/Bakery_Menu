@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/app/themes.dart';
 import 'package:go_router/go_router.dart';
@@ -27,6 +28,16 @@ class HomeScreen extends StatelessWidget {
               },
             ),
           ],
+          leading: Builder(
+            builder: (context) => IconButton(
+              icon: Icon(
+                Icons.menu,
+                color: Theme.of(context).colorScheme.onSecondary,
+                size: 34,
+              ),
+              onPressed: () => Scaffold.of(context).openDrawer(),
+            ),
+          ),
           scrolledUnderElevation: 0,
           toolbarHeight: 75,
           shape: const RoundedRectangleBorder(
@@ -43,6 +54,49 @@ class HomeScreen extends StatelessWidget {
           ),
           centerTitle: true,
           backgroundColor: Theme.of(context).colorScheme.secondary,
+        ),
+      ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            UserAccountsDrawerHeader(
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: Theme.of(context).colorScheme.primary,
+                child: Icon(
+                  CupertinoIcons.person_circle,
+                  size: 50,
+                  color: Theme.of(context).colorScheme.onPrimary,
+                ),
+              ),
+              accountName: const Text("Hoşgeldiniz"),
+              accountEmail: null,
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.primary,
+              ),
+            ),
+            ListTile(
+              leading: const Icon(CupertinoIcons.home),
+              title: const Text('Ana Sayfa'),
+              onTap: () => Navigator.pop(context),
+            ),
+            ListTile(
+              leading: const Icon(Icons.food_bank_outlined),
+              title: const Text('Yiyecekler'),
+              onTap: () => context.push("/food"),
+            ),
+            ListTile(
+              leading: const Icon(
+                Icons.wine_bar_outlined,
+              ),
+              title: const Text('İçecekler'),
+              onTap: () => context.push("/drink"),
+            ),
+            ListTile(
+              leading: const Icon(Icons.cake_outlined),
+              title: const Text('Tatlılar'),
+              onTap: () => context.push("/sweet"),
+            ),
+          ],
         ),
       ),
       body: Center(
