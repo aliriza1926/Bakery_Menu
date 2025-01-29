@@ -97,7 +97,33 @@ lib/
 
 ### **Ekran Görüntüleri:**
 
-[![Uygulama ekran görüntüleri buraya eklenecek.](https://github.com/aliriza1926/Bakery_Menu/blob/main/proje.png?raw=true)]
+### **Ekran Görüntüleri:**
+
+<div align="center">
+
+| Ana Sayfa - Açık Tema | Ana Sayfa - Koyu Tema |
+|:-:|:-:|
+| <img src="screenshots/light_home.png" width="300"> | <img src="screenshots/dark_home.png" width="300"> |
+
+| Yiyecekler - Açık Tema | Yiyecekler - Koyu Tema |
+|:-:|:-:|
+| <img src="screenshots/light_foods.png" width="300"> | <img src="screenshots/dark_foods.png" width="300"> |
+
+| İçecekler - Açık Tema | İçecekler - Koyu Tema |
+|:-:|:-:|
+| <img src="screenshots/light_drinks.png" width="300"> | <img src="screenshots/dark_drinks.png" width="300"> |
+
+| Tatlılar - Açık Tema | Tatlılar - Koyu Tema |
+|:-:|:-:|
+| <img src="screenshots/light_desserts.png" width="300"> | <img src="screenshots/dark_desserts.png" width="300"> |
+
+| Loading Screen | Drawer Menü |
+|:-:|:-:|
+| <img src="screenshots/loading.png" width="300"> | <img src="screenshots/drawer.png" width="300"> |
+
+</div>
+
+----------
 
 ----------
 
