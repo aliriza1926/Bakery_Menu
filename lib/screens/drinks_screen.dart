@@ -128,7 +128,7 @@ class DrinkScreen extends StatelessWidget {
                 ),
                 const SizedBox(width: 10),
                 Padding(
-                  padding: const EdgeInsets.only(right: 20),
+                  padding: const EdgeInsets.only(right: 40),
                   child: Text(
                     price,
                     style: Theme.of(context).textTheme.headlineLarge?.copyWith(
