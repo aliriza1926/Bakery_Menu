@@ -103,23 +103,23 @@ lib/
 
 | Ana Sayfa - Açık Tema | Ana Sayfa - Koyu Tema |
 |:-:|:-:|
-| <img src="screenshots/light_home.png" width="300"> | <img src="screenshots/dark_home.png" width="300"> |
+| <img src="screenshots/homelight.png" width="300"> | <img src="screenshots/homedark.png" width="300"> |
 
 | Yiyecekler - Açık Tema | Yiyecekler - Koyu Tema |
 |:-:|:-:|
-| <img src="screenshots/light_foods.png" width="300"> | <img src="screenshots/dark_foods.png" width="300"> |
+| <img src="screenshots/foodlight.png" width="300"> | <img src="screenshots/fooddark.png" width="300"> |
 
 | İçecekler - Açık Tema | İçecekler - Koyu Tema |
 |:-:|:-:|
-| <img src="screenshots/light_drinks.png" width="300"> | <img src="screenshots/dark_drinks.png" width="300"> |
+| <img src="screenshots/drinklight.png" width="300"> | <img src="screenshots/drinkdark.png" width="300"> |
 
 | Tatlılar - Açık Tema | Tatlılar - Koyu Tema |
 |:-:|:-:|
-| <img src="screenshots/light_desserts.png" width="300"> | <img src="screenshots/dark_desserts.png" width="300"> |
+| <img src="screenshots/sweetlight.png" width="300"> | <img src="screenshots/sweetdark.png" width="300"> |
 
 | Loading Screen | Drawer Menü |
 |:-:|:-:|
-| <img src="screenshots/loading.png" width="300"> | <img src="screenshots/drawer.png" width="300"> |
+| <img src="screenshots/loading.png" width="300"> | <img src="screenshots/drawerlight.png" width="300"> |
 
 </div>
 
