@@ -8,6 +8,10 @@
 ![İstinye Üniversitesi](https://www.unitededucation.com/linklogoch/istinye-university-logo.png)
 
 
+## Proje Hakkında
+
+- Modern ve kullanıcı dostu pastane menü uygulaması
+
 ### **Danışman:**
 
 [[https://github.com/keyvanarasteh](https://github.com/keyvanarasteh)] (Keyvan Arasteh)
@@ -18,16 +22,37 @@
 
 ----------
 
+### **🎥 Demo Video**
+
+<div align="center">
+  
+<div align="center">
+  <video src="demo/Demo.mp4" width="300" >
+</div>
+  
+</div>
+
 ### **Özellikler:**
 
--   Kullanıcı kolay bir şekilde menüdeki ürünleri inceleyip karşılaştırabilecek.
+- 📱 Kullanıcı dostu arayüz
+- 🌓 Açık/Koyu tema desteği
+- 🍽️ Kategorilere ayrılmış menü sistemi:
+  - Yiyecekler
+  - İçecekler
+  - Tatlılar
+- ⚡ Hızlı yükleme animasyonu
+- 📱 Responsive tasarım
 
 ----------
 
 ### **Kullanılan Teknolojiler:**
 
--   **Flutter**
--   **Dart**
+- **Flutter:** v3.16.9
+- **Dart:** v3.2.6
+- **Paketler:**
+  - provider: ^6.1.1
+  - lottie: ^3.0.0
+  - google_fonts: ^6.1.0
 
 
 ----------
@@ -36,8 +61,9 @@
 
 #### **Gereksinimler:**
 
--   Flutter SDK 
--   Dart SDK 
+- Flutter SDK (sürüm 3.5.4)
+
+- Dart SDK (sürüm 3)
 
 ----------
 
@@ -95,7 +121,7 @@ lib/
 
 ----------
 
-### **Ekran Görüntüleri:**
+
 
 ### **Ekran Görüntüleri:**
 

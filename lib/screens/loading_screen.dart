@@ -16,7 +16,7 @@ class SplashScreen extends StatelessWidget {
           height: 500,
           onLoaded: (composition) {
             Future.delayed(
-              const Duration(seconds: 1),
+              const Duration(seconds: 3),
               () => context.go('/home'),
             );
           },
