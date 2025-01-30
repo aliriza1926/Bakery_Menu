@@ -26,11 +26,7 @@
 
 ### **🎥 Demo Video**
 
-<div align="center">
-  <video width="300" controls>
-    <source src="./demo/Demo.mp4" type="video/mp4">
-  </video>
-</div>
+https://github.com/user-attachments/assets/b3bec181-33f1-4a56-9f90-a118155d5c25
 
 ### **Özellikler:**
 
