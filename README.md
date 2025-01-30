@@ -22,14 +22,14 @@
 
 ----------
 
+
+
 ### **🎥 Demo Video**
 
 <div align="center">
-  
-<div align="center">
-  <video src="demo/Demo.mp4" width="300" >
-</div>
-  
+  <video width="300" controls>
+    <source src="./demo/Demo.mp4" type="video/mp4">
+  </video>
 </div>
 
 ### **Özellikler:**
